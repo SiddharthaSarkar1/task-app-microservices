@@ -1,5 +1,5 @@
 services:
-  server:
+  user-service:
     build:
       context: ./user-service
     environment:
@@ -7,3 +7,12 @@ services:
       MONGODB_URI: ${DATABASE_URL}
     ports:
       - "${PORT}:${PORT}"
+  
+  task-service:
+    build:
+      context: ./task-service
+    environment:
+      PORT: ${PORT2}
+      MONGODB_URI: ${DATABASE_URL}
+    ports:
+      - "${PORT2}:${PORT2}"
