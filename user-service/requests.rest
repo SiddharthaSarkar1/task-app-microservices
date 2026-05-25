@@ -1,0 +1,19 @@
+GET http://localhost:3001/health
+
+###
+
+POST http://localhost:3001/user
+Content-Type: application/json
+
+{
+    "name": "Peter",
+    "email": "peter@gmail.com"
+}
+
+###
+
+GET http://localhost:3001/users
+
+###
+
+GET http://localhost:3001/user/6a14803add9bf8dd5f9df4cb

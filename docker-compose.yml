@@ -1,0 +1,9 @@
+services:
+  server:
+    build:
+      context: ./user-service
+    environment:
+      PORT: ${PORT}
+      MONGODB_URI: ${DATABASE_URL}
+    ports:
+      - "${PORT}:${PORT}"
