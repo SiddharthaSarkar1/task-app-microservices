@@ -6,8 +6,8 @@ POST http://localhost:3002/task
 Content-Type: application/json
 
 {
-    "title": "Complete task 2",
-    "description": "The deadline is to complete task 2 by end of this week",
+    "title": "Complete task 5 Sidd",
+    "description": "The deadline is to complete task 5 Sidd by end of tomorrow",
     "userId": "6a14803add9bf8dd5f9df4cb"
 }
 
